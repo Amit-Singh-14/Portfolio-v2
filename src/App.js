@@ -1,7 +1,8 @@
 import TopSection from "./components/topSection/TopSection";
 import MainAnimation from "./components/animation/MainAnimation";
 import Projects from "./components/porjectsection/Projects";
-import Experiment from "./components/Experiment/Experiment";
+import Experiment from "./components/ExperimentSection/Experiment";
+import Footer from "./components/FooterSection/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <TopSection />
       <Projects />
       <Experiment />
+      <Footer />
     </div>
   );
 }

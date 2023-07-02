@@ -3,7 +3,7 @@ import ExperiemntCard from "./ExperiemntCard";
 
 function Experiment() {
   return (
-    <section className="experiment">
+    <section className="experiment" id="experiment">
       <h1>Experiments ans Open sources</h1>
       <div className="expCardShow">
         <ExperiemntCard />

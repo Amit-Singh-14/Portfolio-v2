@@ -41,7 +41,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-left: 10%;
-
   margin-right: 10%;
 }
 .logoimg {
@@ -79,12 +78,14 @@ nav {
   font-family: "League Spartan", sans-serif;
   line-height: 1;
   padding: 8px;
+  text-shadow: 5px 4px 4px rgba(149, 3, 3, 0.6);
 }
 .info p {
   font-size: 1.2em;
   line-height: 0.9380665066;
   font-family: "Libre Baskerville", serif;
   padding: 8px;
+  text-shadow: 5px 4px 4px rgba(149, 3, 3, 0.6);
 }
 .info button {
   font-family: "League Spartan", sans-serif;
@@ -100,6 +101,8 @@ nav {
   letter-spacing: 2px;
   position: relative;
   cursor: pointer;
+  border: none;
+  text-shadow: 5px 4px 4px #95030399;
 }
 
 .arrow {
@@ -115,6 +118,7 @@ nav {
   position: absolute;
   /* border: 2px solid red; */
   right: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   top: -140px;
 }
 
@@ -287,14 +291,14 @@ nav {
 
 .expCardShow {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
 }
 .expCard {
-  width: 100%;
+  /* width: 100%; */
   height: 400px;
   background-color: #272932e2;
-  box-shadow: rgba(70, 1, 1, 0.5) 0px 19px 38px,
-    rgba(169, 159, 159, 0.481) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px,
+    rgba(51, 26, 26, 0.481) 0px 15px 12px;
 }
 
 .cardimg {
@@ -329,4 +333,36 @@ nav {
 .exptdisc {
   font-size: 1em;
   font-family: LibreBaskerville, Palatino Linotype, Times New Roman, serif;
+}
+
+/* --------- footersection ----------- */
+
+.footersection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #ef5141;
+}
+
+.footercontainer {
+  text-align: center;
+}
+.footercontainer p {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 15px;
+  font-family: LibreBaskerville, Palatino Linotype, Times New Roman, serif;
+}
+
+.footerlink {
+  margin-top: 20px;
+}
+.footerlink a {
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  font-size: large;
+  color: #e3e3e3;
 }

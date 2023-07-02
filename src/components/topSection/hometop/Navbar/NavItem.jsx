@@ -6,7 +6,7 @@ function NavItem() {
       <a href="#project" className="route">
         Porjects
       </a>
-      <a href="#" className="route">
+      <a href="#experiment" className="route">
         Experiment
       </a>
       <a href="#" className="route">
