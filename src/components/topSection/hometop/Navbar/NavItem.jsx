@@ -3,7 +3,7 @@ import React from "react";
 function NavItem() {
   return (
     <div className="navitem">
-      <a href="#" className="route">
+      <a href="#project" className="route">
         Porjects
       </a>
       <a href="#" className="route">

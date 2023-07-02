@@ -2,7 +2,7 @@ import React from "react";
 import Cards from "./Cards";
 function Projects() {
   return (
-    <div className="project">
+    <div className="project" id="project">
       <h4>Projects</h4>
       <h1>Latest Work</h1>
       <Cards

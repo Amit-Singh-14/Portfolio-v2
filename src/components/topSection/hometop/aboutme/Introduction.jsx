@@ -1,5 +1,5 @@
 import React from "react";
-import topimg from "../../../images/topImg.png";
+
 import { BsLinkedin, BsTwitter, BsGithub, BsInstagram } from "react-icons/bs";
 import Info from "./Info";
 
@@ -8,7 +8,7 @@ function Introduction() {
     <section className="aboutme">
       <div className="info">
         <Info />
-        <img src={topimg} className="topimg" />
+        <img src="/images/topImg.png" className="topimg" />
       </div>
       <p className="hello">
         <a href="https://www.google.com/" target="_blank">

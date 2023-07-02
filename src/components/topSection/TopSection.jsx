@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../hometop/Navbar/Navbar";
-import Introduction from "../hometop/aboutme/Introduction";
+import Navbar from "./hometop/Navbar/Navbar";
+import Introduction from "./hometop/aboutme/Introduction";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 function TopSection() {
