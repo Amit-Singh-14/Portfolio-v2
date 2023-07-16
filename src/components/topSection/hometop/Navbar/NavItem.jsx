@@ -4,16 +4,13 @@ function NavItem() {
   return (
     <div className="navitem">
       <a href="#project" className="route">
-        Porjects
+        Projects
       </a>
       <a href="#experiment" className="route">
         Experiment
       </a>
-      <a href="#" className="route">
+      <a href="#contact" className="route">
         Contact
-      </a>
-      <a href="#" className="route">
-        M
       </a>
     </div>
   );

@@ -5,13 +5,18 @@ import { HiArrowLongRight } from "react-icons/hi2";
 
 function TopSection() {
   return (
-    <section className="topsection">
-      <Navbar />
-      <Introduction />
-      <p>
-        Works <HiArrowLongRight className="showmore" />
-      </p>
-    </section>
+    <div className="backimg">
+      <section className="topsection">
+        <Navbar />
+        <Introduction />
+        <p>
+          Works
+          <a href="#project">
+            <HiArrowLongRight className="showmore" />
+          </a>
+        </p>
+      </section>
+    </div>
   );
 }
 
