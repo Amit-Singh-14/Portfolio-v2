@@ -389,6 +389,7 @@ nav {
   position: relative;
   background-color: #1c1d25;
   width: 100%;
+  height: 80vh;
   text-align: center;
 }
 .experiment h1 {
@@ -402,14 +403,23 @@ nav {
 }
 
 .expCardShow {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  display: flex;
+  justify-content: center;
 }
+
 .expCard {
-  /* width: 100%; */
+  flex-grow: 0.2;
+  transition: flex-grow 1s ease;
   height: 400px;
   background-color: #272932e2;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(51, 26, 26, 0.481) 0px 15px 12px;
+}
+.expanded {
+  flex-grow: 2;
+}
+
+.shrink {
+  flex-grow: 0.2;
 }
 
 .cardimg {

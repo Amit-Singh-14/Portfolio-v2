@@ -1,10 +1,11 @@
-import React from "react";
-
-function ExperiemntCard() {
+function ExperiemntCard({ id, onClick, active }) {
+  function handleClick() {
+    onClick(id);
+  }
   return (
-    <div className="expCard">
+    <div className={`expCard ${active ? "expanded" : "shrink"}`} onClick={handleClick}>
       <div>
-        <img className="cardimg" src="/images/a.png" />
+        <img className="cardimg" src="/images/a.png" alt=" " />
       </div>
       <div className="disc">
         <div className="exptdisc">
