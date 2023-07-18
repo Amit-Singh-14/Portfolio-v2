@@ -62,10 +62,6 @@ body {
   font-family: "Libre Baskerville", serif;
   /* border: 2px solid red; */
 }
-.topsection a {
-  text-decoration: none;
-  color: #ef5141;
-}
 
 .showmore {
   top: 110%;
@@ -97,37 +93,20 @@ nav {
   font-weight: bolder;
   font-size: 1 rem;
   letter-spacing: 0.5px;
+  color: white;
   overflow: hidden;
   position: relative;
-  display: inline-block;
-  background: linear-gradient(to right, #ea5f4f, #ef5241 50%, white 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: all 0.45s ease-in;
+  background-image: linear-gradient(#ef5241 0 0);
+  background-size: 200% 0.08em;
+  background-position: 200% 100%;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0.2s 0.2s;
 }
-
 .route:hover {
-  background-position: 0 100%;
-  transform: scale(1.3);
-}
-
-.route::after {
-  content: " ";
-  width: 0%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 10px;
-  border-bottom: 3px solid #ef5241;
-  transition: all 0.5s ease-in-out;
-}
-
-.route:hover::after {
-  width: 80%;
-  border-bottom: 3px solid white;
+  transition: background-size 0.2s 0.2s, background-position 0.3s;
+  background-size: 200% 100%;
+  background-position: 100% 100%;
 }
 
 /* ------ about me ---------- */
@@ -388,8 +367,7 @@ nav {
   padding-top: 40px;
   position: relative;
   background-color: #1c1d25;
-  width: 100%;
-  height: 80vh;
+  height: 600px;
   text-align: center;
 }
 .experiment h1 {
@@ -405,13 +383,20 @@ nav {
 .expCardShow {
   display: flex;
   justify-content: center;
+  width: 80%;
+  margin: auto;
+  gap: 10px;
 }
 
 .expCard {
-  flex-grow: 0.2;
-  transition: flex-grow 1s ease;
+  /* flex-grow: 0.2; */
+  position: relative;
+  transition: all 1s ease-in-out;
   height: 400px;
-  background-color: #272932e2;
+  width: 50px;
+  overflow: hidden;
+  /* background-color: ; */
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(51, 26, 26, 0.481) 0px 15px 12px;
 }
 .expanded {
@@ -422,20 +407,54 @@ nav {
   flex-grow: 0.2;
 }
 
-.cardimg {
-  width: 230px;
-  height: 230px;
-  background-color: #1c1d25;
-  border-radius: 50%;
-  display: block;
-  margin: 45px auto 30px;
+.hidden {
+  display: none;
 }
+
+.cardimg {
+  background-color: #1c1d25;
+  /* width: 100%; */
+  height: 400px;
+  width: 781px;
+  opacity: 0.6;
+  /* border-radius: 10%; */
+  /* display: block; */
+  margin: auto;
+}
+
+.cardimgshow {
+  animation: show;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+@keyframes show {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
 .disc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding: 20px;
   display: flex;
+  width: 100%;
+  background-color: #11112991;
   justify-content: space-between;
   align-items: center;
   letter-spacing: 1.5px;
+}
+.change {
+  transform: rotate(90deg);
+  justify-content: center;
+  /* writing-mode: vertical-lr; */
 }
 .disc span {
   position: relative;
@@ -450,8 +469,6 @@ nav {
 }
 .exptdisc {
   text-align: start;
-}
-.exptdisc {
   font-size: 1em;
   font-family: LibreBaskerville, Palatino Linotype, Times New Roman, serif;
 }

@@ -10,7 +10,11 @@ function Experiment() {
     <section className="experiment" id="experiment">
       <h1>Experiments ans Open sources</h1>
       <div className="expCardShow">
-        <ExperiemntCard id={1} onClick={handleItemClick} active={expandedItemId === 1} />
+        <ExperiemntCard
+          id={1}
+          onClick={handleItemClick}
+          active={expandedItemId !== null ? expandedItemId === 1 : true}
+        />
         <ExperiemntCard id={2} onClick={handleItemClick} active={expandedItemId === 2} />
         <ExperiemntCard id={3} onClick={handleItemClick} active={expandedItemId === 3} />
         <ExperiemntCard id={4} onClick={handleItemClick} active={expandedItemId === 4} />
