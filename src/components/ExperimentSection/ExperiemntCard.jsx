@@ -4,16 +4,14 @@ function ExperiemntCard({ id, onClick, active }) {
   }
   return (
     <div className={`expCard ${active ? "expanded" : "shrink"}`} onClick={handleClick}>
-      <div>
-        <img className={`cardimg ${active ? "cardimgshow" : ""}`} src="/images/bag.jpg" alt=" " />
-      </div>
+      <div>{/* <img className={`cardimg ${active ? "cardimgshow" : ""}`} src="" alt=" " /> */}</div>
       <div className="disc">
         <div className="exptdisc">
           <h4 className={`${active ? "" : "hidden"}`}>TITLE</h4>
           {/* className={`${active ? "" : "change"}`} */}
-          <p> project name for gtihub.</p>
+          <p className={`${active ? "" : "hidden"}`}> project name for gtihub.</p>
         </div>
-        <span className={`${active ? "" : "hidden"}`}>{id}</span>
+        <span>{id}</span>
       </div>
     </div>
   );

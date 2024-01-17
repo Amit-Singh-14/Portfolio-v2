@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import Loader from "./Loader";
 
 function App() {
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
