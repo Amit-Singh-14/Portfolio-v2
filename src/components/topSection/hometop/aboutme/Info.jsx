@@ -6,7 +6,7 @@ function Info() {
     <>
       <h1>Amit Singh</h1>
       <p>
-        <i>Full-stack Web Develeper</i>
+        <i>MERN Web Develeper</i>
       </p>
       <button>
         About Me <HiArrowLongRight className="arrow" />
