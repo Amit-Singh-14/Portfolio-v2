@@ -6,11 +6,9 @@
   "homepage": "https://amit-singh-14.github.io/Portfolio-v2",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
